@@ -28,10 +28,55 @@ public class strings {
 
         // substring(starting index,ending index)
 
-        String name = "my name is sunny";
-        String name2 = name.substring(11);
-        System.out.println(name2);
-        System.out.println(name.substring(0,11));
+        // String name = "my name is sunny";
+        // String name2 = name.substring(11);
+        // System.out.println(name2);
+        // System.out.println(name.substring(0,11));
+
+        // StringBuilder sb = new StringBuilder("Tony");
+        // System.out.println(sb);
+
+        // // CharAt 
+        // System.out.println(sb.charAt(0));
+
+        // //set char at index
+        // sb.setCharAt(0,'P');
+        // System.out.println(sb);
+
+        // // insert char at index
+        // System.out.println(sb.insert(0,"S"));
+
+        // // .delete(starting ind,ending index)
+        // sb.delete(0,2);
+        // System.out.println(sb);
+
+        // //.append
+        // StringBuilder hel = new StringBuilder("h");
+        // hel.append("e");
+        // hel.append("l");
+        // hel.append("l");
+        // hel.append("o");
+        // System.out.println(hel);
+
+        // // .length
+        // System.out.println(hel.length());
+
+        // string reversed
+        StringBuilder sb = new StringBuilder("hello");
+        System.out.println(sb);
+
+        for (int i=0; i<sb.length()/2; i++){
+            int front = i;
+            int back = sb.length()-1-i;
+            char frontChar = sb.charAt(front);
+            char backChar = sb.charAt(back);
+
+            sb.setCharAt(front, backChar);
+            sb.setCharAt(back, frontChar);
+
+        }
+        System.out.println(sb);
+
 
 
 
